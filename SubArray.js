@@ -1,26 +1,29 @@
 import java.util.*;
 
-
-public class Main
+class SubArray
 {
+ public static void main(String args[])
+ {
+   Scanner sc=new Scanner(System.in);
+    
+   System.out.println("Enter size:");
+   int n=sc.nextInt();
+  
+  
+   int arr[]=new int[n];
+   
+   System.out.println("Enter Array:");
+   for(int i=0;i<n;i++)
+   {
+     arr[i]=sc.nextInt();
+   }
+   
+   System.out.println("Enter key");
+   int key=sc.nextInt();
+     n=(n-key)+1;
+	 int result=n*(n+1)/2;
+	 System.out.println("result :" + result);
+ }
 
-	public static void main(String[] args) 
-	{
-
-	  Scanner sc=new Scanner(System.in);
-
-	  int a=sc.nextInt();
-
-	  int b=sc.nextInt();
-
-	  int d[]=new int[a];
-	
-          int c=a+1-b;
-
-	  int s=(a*(a+1))/2;
-
-	  System.out.prinltn("count of subarray"+s);
-
-	}
 
 }
